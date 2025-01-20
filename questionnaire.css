@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: roboto, sans-serif;
+    background-color: whitesmoke;
+}
+
+#main-nav {
+    background-color: rgb(1, 1, 58);
+    height: 65px;
+    text-align: right;
+}
+
+.logo-holder {
+    float: left;
+    text-align: left;
+    padding: 10px 10px 10px 14px;
+}
+
+.logo-img {width: 45px;}
+
+#main-menu {list-style: none;}
+
+.main-menu-item {display: inline-block;}
+
+.main-menu-item a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.main-menu-item a:hover {
+    color: lightgray;
+}
+
+.h1 {
+    margin: 0;
+    text-align: center;
+    padding-top: 20px;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.schedule-table {
+    width: 90%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.schedule-table th, .schedule-table td {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: left;
+}
+
+.schedule-table th {
+    background-color: #030553;
+    color: white;
+    text-transform: uppercase;
+}
+
+.schedule-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.schedule-table tr:hover {
+    background-color: #ddd;
+}
+
+.contact-block {
+    background-color: white;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 35px;
+}
+
+.contact-info {
+    width: 50%;
+    padding-left: 5%;
+}
+
+.contact-info p, .contact-info ul {
+    margin: 0.5rem 0;
+}
+
+.contact-info ul {
+    padding: 0;
+    list-style: none;
+}
+
+.contact-info ul li {
+    margin: 0.5rem 0;
+}
+
+.contact-info a {
+    color: #08015e;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.map {
+    padding-right: 5%;
+}
+
+.form {
+    background-color: white;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+   

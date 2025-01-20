@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    flex-direction: inherit;
+}
+
+body {
+    font-family: roboto, sans-serif;
+    background-color: whitesmoke;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+#main-nav {
+    background-color: rgb(1, 1, 58);
+    height: 65px;
+    text-align: right;
+}
+
+.logo-holder {
+    float: left;
+    text-align: left;
+    padding: 10px 10px 10px 14px;
+}
+
+.logo-img {width: 45px;}
+
+#main-menu {list-style: none;}
+
+.main-menu-item {display: inline-block;}
+
+.main-menu-item a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.main-menu-item a:hover {
+    color: lightgray;
+}
+
+.cover {
+    background: url(images/BOG_7415.JPG);
+    background-position: center;
+    background-size: cover;
+    padding: 170px 20%;
+    color: white;
+}
+
+.cover-dimmer {
+    background: rgba(0,0,0,0.5);
+    padding: 12px;
+    text-align: center;
+}
+
+h1 {font-size: 3.5rem;}
+
+.features-section {
+    padding: 100px 59px 200px 59px;
+    position: relative;
+}
+
+.feature {
+    display: flex;
+    height: 400px;
+    margin-bottom: 45px;
+    padding: 40px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 20px;
+}
+
+.feature .illustration {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+  
+.feature .illustration img {
+    height: 400px;
+}
+
+.feature .text-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px;
+}
+  
+.feature .text-info h2 {
+    margin-bottom: 20px;
+}
+  
+.feature .text-info p {
+    color: rgb(1, 1, 58);
+}
