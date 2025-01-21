@@ -6,7 +6,7 @@
 
 body {
     font-family: roboto, sans-serif;
-    background-color: whitesmoke;
+    background-color: #ecf0f1;
 }
 
 header {
@@ -15,7 +15,7 @@ header {
 }
 
 #main-nav {
-    background-color: rgb(1, 1, 58);
+    background-color: #f7c1a6;
     height: 65px;
     text-align: right;
 }
@@ -33,7 +33,7 @@ header {
 .main-menu-item {display: inline-block;}
 
 .main-menu-item a {
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 10px;
     margin: 10px;
@@ -41,7 +41,7 @@ header {
 }
 
 .main-menu-item a:hover {
-    color: lightgray;
+    color: rgb(44, 44, 44);
 }
 
 .cover {
@@ -66,12 +66,16 @@ h1 {font-size: 3.5rem;}
 }
 
 .feature {
+    background-color: #f3f6f7;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 90%;
     display: flex;
-    height: 400px;
-    margin-bottom: 45px;
-    padding: 40px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
 .feature .illustration {
@@ -97,5 +101,138 @@ h1 {font-size: 3.5rem;}
 }
   
 .feature .text-info p {
-    color: rgb(1, 1, 58);
+    color: rgb(44, 44, 44);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.achievement {
+    color: rgb(44, 44, 44);
+    font-size: 18px;
+    line-height: 1.6;
+    padding-left: 25px;
+}
+
+@media (max-width: 768px) {
+    #main-nav {
+        height: 35px;
+    }
+    
+    .main-menu-item a {
+        font-size: 12px;
+        padding: 5px;
+        margin: 5px;
+    }
+    
+    .logo-holder {
+        padding: 5px 5px 5px 7px;
+    }
+    
+    .logo-img {width: 25px;}
+
+    h1 {font-size: 2rem;}
+
+    .features-section {
+        padding: 100px 20px 200px 20px;
+    }
+    
+    .feature {
+        margin: 1rem auto;
+        padding: 1.5rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .feature .illustration img {
+        height: auto;
+        width: 50%;
+    }
+
+    .feature .text-info h2 {
+        font-size: 18px;
+    }
+      
+    .feature .text-info p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .achievement {
+        font-size: 14px;
+        line-height: 1.6;
+        padding-left: 20px;
+    }
+    
+    .feature:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 350px) {
+    #main-nav {
+        height: 30px;
+    }
+    
+    .main-menu-item a {
+        font-size: 10px;
+        padding: 3px;
+        margin: 3px;
+    }
+    
+    .logo-holder {
+        padding: 4px 4px 4px 6px;
+    }
+    
+    .logo-img {width: 20px;}
+
+    .features-section {
+        padding: 100px 20px 200px 20px;
+    }
+    
+    .features-section h2 {
+        font-size: 25px;
+    }
+    
+    .feature {
+        margin: 1rem auto;
+        padding: 1.5rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .feature .illustration img {
+        height: auto;
+        width: 50%;
+    }
+
+    .feature .text-info h2 {
+        font-size: 16px;
+    }
+      
+    .feature .text-info p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .achievement {
+        font-size: 12px;
+        line-height: 1.6;
+        padding-left: 20px;
+    }
+    
+    .feature:nth-child(even) {
+        flex-direction: column-reverse;
+    }
 }
